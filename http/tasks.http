@@ -1,0 +1,32 @@
+### Define the base URL
+@baseUrl = http://localhost:5000
+
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+    "title": "Ok",
+    "description": "ok"
+}
+
+### LISTA DE TAREAS
+GET {{baseUrl}}/tasks
+Content-Type: application/json
+
+
+### LISTA DE TAREAS
+GET {{baseUrl}}/tasks/1
+Content-Type: application/json
+
+### ACTUALIZAR TAREA
+PUT {{baseUrl}}/tasks/1
+Content-Type: application/json
+
+{
+    "title": "Ok2",
+    "description": "ok2"
+}
+
+### ELIMINAR TAREA
+DELETE {{baseUrl}}/tasks/2
+Content-Type: application/json
