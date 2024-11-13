@@ -7,6 +7,11 @@ tasks = []
 task_id_control = 1
 
 
+@app.route("/")
+def home():
+    return "Hello, World!"
+
+
 @app.route("/tasks", methods=["POST"])
 def create_task():
     global task_id_control
